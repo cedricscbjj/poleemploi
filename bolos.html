@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+#display, #display2, #display3{
+    font-family: 'Kalnia', serif;
+
+}
+
+
+    </style>
+</head>
+<body  onload="showInput()">
+    
+
+
+<div><img src="https://www.envol-fr.com/wp-content_envol/uploads/2016/02/Clownforlaragiddings.jpg
+    " alt="I" width="470px"  height="300px"></div>
+
+
+<div id="display"></div>
+<div id="display2"></div>
+<div id="display3"></div>
+
+
+    <script>
+      
+
+
+
+
+      function showInput() {
+    var userNameprank = localStorage.getItem('userNameprank');
+    var userTafprank = localStorage.getItem('userTafprank');
+    document.getElementById('display').innerText = "Vous etes vraiment bete " + (userNameprank ? userNameprank : "Aucune entrée") + " Vous croyez au pere Noel ma parole!";
+    document.getElementById('display2').innerText = "Vous voulez vraiment etre " + (userTafprank ? userTafprank : "Aucune entrée") + "???";
+    document.getElementById('display3').innerText = "Désolé " + (userNameprank ? userNameprank : "Aucune entrée") + " mais y'a rien à gratter ici !!! Allez sur pole emploi comme tout le monde!";
+
+}
+
+
+      </script>
+
+
+</body>
+</html>
